@@ -1,0 +1,819 @@
+<html><head><title>The Brothers RESTRO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://www.w3schools.com/Retro-csss/4/demo2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", sans-serif;
+    }
+  
+    body,
+    html {
+      height: 100%;
+      color: rgb(0, 0, 0);
+      line-height: 1.8;
+      
+    scroll-behavior:smooth;
+ 
+
+    }
+  
+    .row-padding.center {
+    display: flex;
+}
+    /* Create a Parallax Effect */
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+      background-attachment: fixed;
+  
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+     .men{
+      font-family: 'Comforter Brush', cursive;
+    font-family: 'Great Vibes', cursive
+     }
+     .mens{
+       font-size: 18px;
+     }
+    .review{
+      color: black;
+      background-color: white;
+      border-radius: 20px;
+      padding: 5px;
+    }
+    .display-middle {
+      
+      position: absolute;
+      top: 25%;
+      left: 87%;
+      text-align: left;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%)
+    }
+    .padding-small{padding:4px 8px!important}.padding{padding:8px 16px!important} 
+  
+    .opacity-max {
+      opacity: 0.25
+    }
+  
+    .opacity-min {
+      opacity: 1
+    }
+    #about{
+      box-shadow: 0 0px 10px 0;
+    }
+  
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+      background-image: url("PicsArt_11-20-11.35.04.png");
+      min-height: 600px;
+      
+    }
+   
+    .card{
+      color:rgb(228, 10, 10);
+      font-style: normal;
+      font-size: medium;
+    }
+  
+    /* Second image (DISCOUNTS & COMBOS) */
+    .bgimg-2 {
+      background-image: url("parallax2.jpg");
+      min-height: 400px;
+    }
+  
+    /* Third image (testimonials)) */
+    .bgimg-3 {
+      background-image: url("parallax3.jpg");
+      min-height: 400px;
+    }
+  
+    .wide {
+      letter-spacing: 10px;
+    }
+  
+    .hover-opacity {
+      cursor: pointer;
+    }
+  
+    .animate-top {
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      position: relative;
+      animation: animatetop 0.4s;
+      
+    }
+  
+    @keyframes animatetop {
+      from {
+        top: -300px;
+        opacity: 0
+      }
+  
+      to {
+        top: 0;
+        opacity: 1
+      }
+    }
+  
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1600px) {
+  
+      .bgimg-2,
+      .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 600px;
+      }
+    }
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+  
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+   .combo{
+    font-size: 41px;
+      text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-style: italic;
+  }
+    .disc{
+      font-weight: bold;
+    }  
+   
+     
+  
+    .title {
+      text-align: center;
+      margin-bottom: 60px;
+      
+    }
+  .name{
+    font-size: 15px;
+    
+    color: #ff7720;
+    font-style: italic;
+  }
+    .title h4 {
+      text-transform: capitalize;
+      font-size: 36px;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+  
+    .title h4 span {
+      display: block;
+       
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+  
+    .title h4:before {
+      position: absolute;
+      content: "";
+      width: 100px;
+      height: 2px;
+      background-color: #ff7720;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .padding-64{padding-top:1px!important;padding-bottom:1px!important;}
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .single-menu {
+       
+      margin-bottom: 40px;
+       
+      border-bottom: 1px solid #ddd;
+    }
+    .top, .bottom {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 0 10px 0;
+    z-index: 1;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+    .single-menu:nth-child(5),
+    .single-menu:nth-child(6) {
+      border-bottom: 0;
+    }
+    .combo {
+    font-size: 41px;
+    text-align: center;
+    background-color: #ab0808e3;
+    border-top-left-radius: 21px;
+    border-top-right-radius: 21px;
+    margin: 17px;
+    margin-bottom: 0px;
+    font-weight: 100;
+    color: #fff9ea;
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Great Vibes', cursive;
+    
+}
+.center {
+    text-align: center!important;
+    font-size: 20px;
+    font-style: italic;
+    font-style: normal;
+    background-color: #fff9ea;
+    margin: 17px;
+    margin-top: 0px;
+    border-bottom-right-radius: 21px;
+    border-bottom-left-radius: 21px;
+}
+    .single-menu {
+      
+    flex-direction: column;
+    align-items: center;
+    margin-top: 21px;
+    padding: 22px;
+} .single-menu img {
+    max-width: 180px;
+    margin-right: 30px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    padding: 3px;
+    transition: .5s;
+  }
+
+     .single-menu{ flex-direction: row;
+      align-items: center;
+    }
+  
+    .single-menu:hover img {
+      border-radius: 0;
+    }
+    .center1 {
+    text-align: center!important;
+    font-size: 20px;
+    font-style: italic;
+    font-style: normal;
+    margin: 17px;
+    margin-top: 0px;}
+     
+    .row-padding.center {
+    display: flex;
+    margin: 42px;
+}
+
+    .single-menu img {
+      max-width: 180px;
+      margin-right: 30px;
+      border-radius: 50%;
+      border: 1px solid #ddd;
+      padding: 3px;
+      transition: .5s;
+    }
+  
+    .single-menu h4 {
+      text-transform: capitalize;
+      font-size: 22px;
+      border-bottom: 1px dashed #333;
+      margin-bottom: 5px;
+      padding-bottom: 5px;
+    }
+    .review1{    
+    margin-left: 45px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 15px;
+    border: 5px solid;
+    border-radius: 30px;
+    background-color: #a73c07;
+    color: white;
+}
+    
+    .row-padding {
+     
+    padding: 71px;
+    padding-bottom: 0px;
+}
+  
+    .single-menu h4 span {
+      float: right;
+      color: #ff7720;
+      font-style: italic;
+    }
+    .sbi{
+      font-style:italic;
+      color: navy;
+    }
+    .user{
+      height: 15px 15px;
+    }
+    .review{
+      font-weight: bold;
+      font-style: italic;
+    }
+    .employlist{
+  padding: 10px;
+   border-top-right-radius: 20px;
+   border-bottom-right-radius: 20px;
+  border-style: hidden;
+  display:-moz-box;
+  
+  }
+  .row {
+    margin: 24px;
+}
+.input-border {
+    border-radius: 8px;
+    line-height: 10px;
+    
+    padding: 13px;
+    border: 2px solid #9e5e3e;
+    margin: -10px;
+}
+.menu {
+    background-color: #fff9ea;
+    /* border-radius: 21px; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    margin: 21px;
+    margin-top: 0px;
+    border-bottom-right-radius: 21px;
+    border-bottom-left-radius: 21px;
+}
+.single-menu {
+    
+    flex-direction: column;
+    align-items: center;
+    margin-top: 21px;
+    padding: 22px;
+}
+  .para {
+    font-style: italic;
+    margin: 26px;
+    text-align: center;
+    text-align: justify;
+}
+.title {
+    text-align: center;
+    margin-bottom: 60px;
+    margin: 21px;
+    border-top-left-radius: 21px;
+    border-top-right-radius: 21px;
+    color: #fff9ea;
+    background-color: #ab0808e3;
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Great Vibes', cursive;
+    margin-bottom: 5px;
+    margin-bottom: 0px;
+}
+.col.m8.panel {
+    margin-left: 57px;
+}
+.row {
+    margin: 21px;
+    text-align: center;
+}
+.col.m8.panel {
+    margin-left: 31px;
+}
+.large.margin-bottom {
+    margin-left: -27px;
+}
+  .employee-card{
+  
+  display:flex;
+     
+    color:black;
+    background-color:white;
+  
+    border-radius: 10px;
+    max-width: 100%;
+    margin: 20px;
+    padding: 5px;
+    box-shadow: 0 2px 5px 0  #272727;
+  
+  }
+    
+  .padding-small{padding:4px 8px!important}.padding{padding:8px 16px!important}
+  .padding-large{padding:1px 1px!important ;
+  border-radius: 5px 5px;}
+  .black,.hover-black:hover{color:rgb(0, 0, 0)!important;background-color:rgb(255, 255, 255)!important}
+    .top,
+    .bottom {
+      position: fixed;
+      width: 100%;
+      z-index: 1;
+      background-color: white;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    .h3{
+      text-align: center;
+    }
+  
+    .bar {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .btn,
+    .button {
+      border: none;
+      display: inline-block;
+      list-style: none;
+      
+      align-items: stretch;
+      justify-content: space-around;
+      padding: 8px 16px;
+      vertical-align: middle;
+      overflow: hidden;
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+      text-align: center;
+      cursor: pointer;
+      white-space: nowrap
+    }
+    .left-align{text-align:left!important}.right-align{text-align:right!important}.justify{text-align:justify!important}
+    .center{text-align:center!important   ;font-size: 20px;
+      
+      font-style: normal;
+    }
+    #tex {
+      font-weight: bold;
+    }
+  </style>
+  
+  </head><body>
+  
+    <!-- Navbar (sit on top) -->
+    <div class="top">
+      <div class="bar" id="myNavbar">
+        <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="bar-item button">HOME</a>
+        <a href="#about" class="bar-item button hide-small"><i class="fa fa-user"></i> ABOUT</a>
+        <a href="#DISCOUNTS &amp; COMBOS" class="bar-item button hide-small"><i class="fa fa-th"></i>DISCOUNTS &amp; COMBOS</a>
+        <a href="#testimonials" class="bar-item button hide-small"><i class="fa fa-envelope"></i> TESTIMONIALS</a>
+  
+        
+      </div>
+  
+      <!-- Navbar on small screens -->
+      
+    </div>
+  
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 display-container opacity-min" id="home">
+      <div class="display-middle" style="white-space:nowrap;">
+        <span class="center padding-large black xlarge wide animate-opacity">Your Happy Place <br> For Delecious <br> Italian <span class="hide-small"></span>
+      </span></div>
+    </div>
+  
+    <!-- Container (About Section) -->
+    <div class="content container padding-64" id="about">
+      <h3 class="center1">ABOUT US</h3>
+      <p class="center1"><em>Delight in every bite</em></p>
+      <p class="para">  At The Brothers Restro, we have tried to capture the complexities and diversity of Italian cuisine.We have a carefully designed a la carte menu as well as a five course Tradition in Evolution that explores the finest Italian ingredients from a fresh, modern angle. We also serve a wide range of Italian cheese and coffees, dolce and digestifs; to complete the dining flow. An expertly curated library of old and new world wine labels. You are welcome to arrive early for your meal, take a seat in the restaurant lounge and enjoy a glass of wine before you eat. Or try a private wine tasting experience with our sommelier, followed by lunch or dinner
+  
+  
+      </p>
+  
+      <div class="row">
+  
+        <!-- Hide this text on small devices -->
+        <div class="col m6 hide-small padding-large">
+          <p id="tex">Dress code: We request that gentlemen wear full length trousers and closed shoes.
+            <br>
+  
+            Child Policy: Children under 8 years are welcome to dine up to 8:00 pm only.
+          </p>
+        </div>
+      </div>
+      
+      <div class="wrapper">
+        <div class="title">
+          <h4><span class="mens">"Fresh food for good health"</span>  <span class="men">our menu</span>  </h4>
+        </div>
+        <div class="menu">
+          <div class="single-menu">
+            <img src="pexels-pixabay-315755.jpg" alt="">
+            <div class="menu-content">
+              <h4>Italian Pizzas <span>Starting from 560/-</span></h4>
+              <p>--La Piazza--The cheesy Margherita for INR 1000 
+               <br> --good ‘ol Pepperoni for INR 1250
+               <br>
+                --Sorrento--INR 995 for a Margheritta, INR 1195 for a Pepperoni
+                 <br> --Prego--INR 820 for a Margherita, INR 980 for a delicious Bismark (Parma Ham, Asparagus, Mozzarella, Parmesan and Eggs).
+                <br>--Diva Italian--Mere INR 560 for a Margherita, and INR 790 for a Prosciutto.</p>
+            </div>
+          </div>
+      <br>
+      
+          <div class="single-menu">
+            <img src="resize-16374785891809303024SangiovesewinetastingWineFolly (1).jpg" alt="">
+            <div class="menu-content">
+              <h4>Italian Wines<span>Starting  from 2400/-</span></h4>
+              <p>--Tenuta Sant Antonio, Scaia Corvina Red for INR 2905  <br>
+                --Tenuta Sant Antonio, Scaia Rosato 2020 INR 2905 <br>
+                --Colterenzio, Lumo Pinot Grigio 2019 INR 2400 <br>
+  
+                --Tenuta Sant Antonio, Scaia White 2020 INR 3400</p>
+             </div>
+          </div>
+      
+          <div class="single-menu">
+            <img src="pexels-monica-turlui-7218638.jpg" alt="">
+            <div class="menu-content">
+              <h4>Italian Soups<span>Starting From 300/-</span></h4>
+              <p> <br> --Bean and pasta soup forINR 300
+               <br> --Brocolli wallnut soup for INR 500
+               <br> --Chicken-italia for INR 400
+               <br>
+                --Corn and fussili soup for INR 500</p>
+            </div>
+          </div>
+      
+          <div class="single-menu">
+            <img src="pexels-sebastian-coman-photography-3590401.jpg" alt="">
+            <div class="menu-content">
+              <h4>Italian Pastas <span>Starting from 220/-</span></h4>
+              <p> --Colavita Fettuccine Pasta 500g (Durum Wheat) for INR 333 <br>
+                --Keya Gourmet Conchiglie Shell Durum Wheat Pasta Pack of 2 x 500 Gm  for INR 220 <br>
+                --Colavita LinguineDurum Wheat Pasta 500 g (Combo Pack of 2) for INR 480 <br>
+                --Colavita Rigatoni Durum Wheat Pasta 500 g (Combo Pack of 2) for INR 480
+                </p>
+            </div>
+          </div>
+      
+          <div class="single-menu">
+            <img src="image (1).jpg" alt="">
+            <div class="menu-content">
+              <h4>Italian Deserts <span>Starting from 280/-</span></h4>
+              <p> --Strawberry Gelato for INR 400 <br>
+                --Chocolate-and-Pistachio Biscotti for INR 350 <br>
+                --Mixed-Nut-Milk Panna Cotta for INR 280 <br>
+                --Sweet Corn Panna Cotta with Fresh Blueberry Compote for INR 500</p>
+            </div>
+          </div>
+  </div>  
+  
+      <!-- Second Parallax Image with DISCOUNTS & COMBOS Text -->
+      
+  
+      <!-- Container (DISCOUNTS & COMBOS Section) -->
+      <div class="content container padding-64" id="DISCOUNTS &amp; COMBOS">
+        <h3 class="combo">Combos and Discounts</h3>
+        <p class="center"><em> --Bean and pasta soup + Colavita Fettuccine Pasta 500g (Durum Wheat) for INR 500
+         <br> --Strawberry Gelato + Mixed-Nut-Milk Panna Cotta for INR 600
+         <br> --Prego  Margherita Pizza + Pepsi 250ml for INR 750
+         <br> --Colavita Rigatoni Durum Wheat Pasta 500 g (Combo Pack of 2) + Corn and fussili soup for INR 800 <br>  <span class="card">DEBIT AND CREDIT CARD DISCOUNTS OF FLAT 15% OFF ON<span class="sbi"> SBI ,AXIS and HDFC CARDS .(T&amp;C)apply</span> </span>  
+          <br>
+           <span class="disc"> *OTHER DISCOUNTS VARY FROM ORDER TO ORDER.</span><br>  Here are Few  Shots from our Restro</em></p><br>
+  
+        <!-- Responsive Grid. Four clumns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="row-padding center">
+          <div class="col m3">
+            <img src="pexels-monica-turlui-7218638.jpg" style="width:100%"   class="hover-opacity" alt="Slurpy Soups">
+          </div>
+  
+          <div class="col m3">
+            <img src="pizza.jpg" style="width:100%" o   class="hover-opacity" alt="Cheesilicious  Pizzas">
+          </div>
+  
+          <div class="col m3">
+            <img src="pexels-breakingpic-3044.jpg" style="width:100%"  class="hover-opacity" alt="Momentable Wines">
+          </div>
+  
+          <div class="col m3">
+            <img src="pexels-sam-lion-5710170.jpg" style="width:100%"  class="hover-opacity" alt="Delecious Pastas">
+          </div>
+        </div> 
+  
+        
+      </div>
+  
+      
+  
+      <!-- Third Parallax Image with DISCOUNTS & COMBOS Text -->
+  
+      <!-- Container (testimonials Section) -->
+      <div class="content container padding-64" id="testimonials">
+        <h3 class="combo">Testimonials</h3>
+        <p class="center"><em>I'd love your feedback!</em></p>
+        <div class="employees">
+          <div class="emp">
+             
+          </div>
+  
+          <div class="employlist">
+            <ul>
+              <div class="employee-card">
+                
+                <div class="employment" id="employ1">
+                  <span class="name">Abhinav</span>
+                  <span class="name">Chandra Sahu</span>
+                  <br>
+                  <span>1-Nov</span>
+                  <br>
+                  <span class="review"> Very beautiful restaurant with really delicious food. <br> We had the chicken with mashed potatoes and vegetables. <br> The chicken was cooked to perfection! This is a great place for a romantic date</span>
+                  <br>
+                  <span>techindustan365@gmail.com</span>
+                </div>
+  
+              </div>
+            </ul>
+  
+            <ul>
+              <div class="employee-card">
+                 
+                <div class="employment" id="employ1">
+                  <span class="name">Rahul</span>
+                  <span class="name">Sharma</span>
+                  <br>
+                  <span>16-Nov</span>
+                  <br>
+                  <span class="review"> Amazing dinner tonight!  Our server was awesome, and so very friendly . <br> The food was just simply amazing. Had the veal my wife had pasta, <br> our guests ordered the double cut pork chop,<br> and the beef and pulled pork meatloaf. Wow, what a great meal!  </span>
+                  <br>
+                  <span>rahul47@gmail.com</span>
+                </div>
+  
+              </div>
+            </ul>
+  
+              <ul>
+                <div class="employee-card">
+                   
+                  <div class="employment" id="employ1">
+                    <span class="name">Jesus Kumar Sahoo </span>
+                     
+                    <br>
+                    <span>20-Nov
+                    <br>
+                    <span class="review">Absolutely beautiful. I can’t knock this place. First time visiting and will definitely be visiting again. <br> Staff were very polite and attentive. <br> Great restaurant </span>
+                    <br>
+                    <span> jesuskumar@gmail.com</span>
+                  </span></div>
+                  </div>
+                </ul>
+                 
+              </div>
+              <form class="form" action="/action_page.php" target="_blank">
+                <div class="row-padding" style="margin:0 -16px 8px -16px">
+                  <div class="half">
+                    <input id="title" class="input-border" type="text" placeholder="Name" required="" name="Name">
+                  </div>
+                  <br>
+                  <div class="half">
+                    <input id="date" class="input-border" type="text" placeholder="Date" required="" name="Email">
+                  </div>
+                  <br>
+                  <div class="half">
+                    <input id="review" class="input-border" type="text" placeholder="Review" required="" name="Message">
+                </div>
+
+               <br> <div class="half">
+                       <input id="mail" class="input-border" type="text" placeholder="E-Mail" required="" name="Message">
+              </div></div>
+              <br>
+               <button type="button" onclick="addEmployee()" class="review1" name="button">
+                  <i class="fa fa-paper-plane"></i> ADD REVIEW
+                </button>
+              </form>
+            
+          
+                
+  
+        <div class="row padding-32 section">
+           
+          <div class="col m8 panel">
+            <div class="large margin-bottom">
+              <h3 class="h3">DINE-IN at</h3>
+              <i class="fa fa-map-marker fa-fw hover-text-black xlarge margin-right"></i>
+              The Brothers Restro, Master-Canteen, <br> Bhubaneaswar-756502,  <br> India
+              Timings
+              CLOSED TILL FURTHER NOTICE.<br>
+              <i class="fa fa-phone fa-fw hover-text-black xlarge margin-right"></i> Phone +91 22 6632 6215<br>
+              <i class="fa fa-envelope fa-fw hover-text-black xlarge margin-right"></i>
+              Email:thebrothers29@gmail.com<br>
+            </div>
+          </div>
+
+          
+      
+    </div>
+      <!-- Footer -->
+      <footer class="center black padding-64 opacity hover-opacity-off">
+        <a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+        <div class="xlarge section">
+          <a href="https://www.facebook.com/tanmesh.sahu.52">
+          <i class="fa fa-facebook-official hover-opacity"></i></a>
+          <a href="https://www.instagram.com/tanmeshinstas86/">
+          <i class="fa fa-instagram hover-opacity"></i></a>
+          <a href="https://twitter.com/MrTechfreak96">
+          <i class="fa fa-twitter hover-opacity"></i></a>
+          <a href="https://www.linkedin.com/in/tanmesh-chandra-sahu-20309a201/">
+          <i class="fa fa-linkedin hover-opacity"></i></a>
+        </div>
+      </footer></div>
+      
+  
+      
+       
+  
+      <script>
+      
+  // Change style of navbar on scroll
+  window.onscroll = function() {myFunction()};
+  function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          navbar.className = "bar" + " card" + " animate-top" + " white";
+      } else {
+          navbar.className = navbar.className.replace(" card animate-top white", "");
+      }
+  }
+         
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("show") == -1) {
+            x.className += " show";
+          } else {
+            x.className = x.className.replace(" show", "");
+          }
+        }
+  
+        var employlistholder= document.querySelector(".employlist");
+  var  addEmployModal=document.querySelector("#employmodel1");
+  addEmployModal.style.display="none";
+  function addEmployee()
+  {
+    var title=document.querySelector("#title").value;
+     
+        var date=document.querySelector("#date").value;
+          var review=document.querySelector("#review").value;
+            var mail=document.querySelector("#mail").value;
+  
+            var newItem=
+            `<ul>
+           <div class="employee-card">
+                    
+                    <div class="employment" id="employ1">
+  
+                      <span class="name">`+title+`</span>
+                       
+                      <br>
+                      <span>`+date+`</span>
+                      <br>
+                      <span class="review">`+review+`</span>
+                      <br>
+                      <span>`+mail+`</span>
+                    </div>
+                   </span>
+                  </div>
+                </ul>
+                 `;
+  
+            employlistholder.insertAdjacentHTML('beforeend',newItem);
+            addEmployModal.style.display="block";
+  }
+   
+      </script>
+  
+  
+  
+  
+  
+  </div></div></body></html>
